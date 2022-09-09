@@ -1,4 +1,5 @@
 # @fe92star/eslint-config
+* 一个用于个人项目开发的`eslint preset`最佳实践
 
 ## Usage
 

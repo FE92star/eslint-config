@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'plugin:react/recommended',
+    '@fe92star/eslint-config-ts',
   ],
   settings: {
     react: {
