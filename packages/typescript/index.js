@@ -1,8 +1,5 @@
-const basic = require('@antfu/eslint-config-basic')
-
 module.exports = {
   extends: [
-    '@antfu/eslint-config-basic',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -11,7 +8,6 @@ module.exports = {
       node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] },
     },
   },
-  overrides: basic.overrides,
   rules: {
     'import/named': 'off',
 
