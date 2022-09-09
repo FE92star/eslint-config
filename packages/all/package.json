@@ -16,9 +16,9 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@fe92star/eslint-config-prettier": "workspace:^0.0.1",
-    "@fe92star/eslint-config-react": "workspace:^0.0.1",
-    "@fe92star/eslint-config-vue": "workspace:^0.0.1"
+    "@fe92star/eslint-config-prettier": "workspace:^0.0.0",
+    "@fe92star/eslint-config-react": "workspace:^0.0.0",
+    "@fe92star/eslint-config-vue": "workspace:^0.0.0"
   },
   "devDependencies": {
     "eslint": "^8.23.0"
