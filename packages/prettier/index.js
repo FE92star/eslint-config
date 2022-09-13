@@ -6,6 +6,6 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     ...prettierRules,
-    'prettier/prettier': 'warn',
+    'prettier/prettier': 'off',
   },
 }
