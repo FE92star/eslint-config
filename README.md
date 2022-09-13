@@ -1,46 +1,45 @@
 # @fe92star/eslint-config
-* 一个用于个人项目开发的`eslint preset`最佳实践
+* 适用于个人项目开发的`eslint presets`, 包含`Javascript`,`Typescript`,`React`,`Vue`,`Prettier`等
 
 ## Usage
 
-### Install
-
 ```bash
-pnpm add -D eslint @fe92star/eslint-config
+# React, Vue3 和 Prettier
+pnpm add -D @fe92star/eslint-config
+# Javascript
+pnpm add -D @fe92star/eslint-config-basic
+# Prettier
+pnpm add -D @fe92star/eslint-config-prettier
+# React
+pnpm add -D @fe92star/eslint-config-react
+# Typescript
+pnpm add -D @fe92star/eslint-config-ts
+# Vue
+pnpm add -D @fe92star/eslint-config-vue
 ```
 
-### Config `.eslintrc`
+### Config `.eslintrc.js`
 
-```json
-{
-  "extends": "@fe92star"
+```js
+// .eslintrc.js
+module.exports = {
+  root: true,
+  extends: ['@fe92star/eslint-config'],
+  rules: {
+    // 自定义规则配置
+  },
 }
 ```
 
-> You don't need `.eslintignore` normally as it has been provided by the preset.
+> 不需要额外加`.eslintignore`，`preset`内部已经自动提供
 
-### Add script for package.json
-
-For example:
+### package.json的lint脚本
 
 ```json
 {
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
-  }
-}
-```
-
-### Config VS Code auto fix
-
-Create `.vscode/settings.json`
-
-```json
-{
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
   }
 }
 ```

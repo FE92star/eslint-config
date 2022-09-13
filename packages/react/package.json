@@ -19,7 +19,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@fe92star/eslint-config-ts": "workspace:^0.0.0",
+    "@fe92star/eslint-config-ts": "workspace:*",
     "eslint-plugin-react": "^7.31.1"
   },
   "devDependencies": {
